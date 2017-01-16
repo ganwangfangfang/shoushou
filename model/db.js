@@ -2,7 +2,7 @@
  * Created by gfbaiwff on 2017/1/15.
  */
 var MongoClient = require("mongodb").MongoClient;
-var settings = require("../settings.js");
+var settings = require("../setting.js");
 
 function _connectDB(callback){
     var url = settings.dburl;
@@ -37,7 +37,7 @@ exports.find = function (collectionName,json,C,D) {
         var limit = args.pagemount || 0;
         var sort = args.sort || {};
     }else{
-        throw new Error("find º¯Êý²ÎÊý±ØÐë´«Èý¸ö»òÕßËÄ¸ö");
+        throw new Error("find ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë´«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½");
         return;
     }
     _connectDB(function(err,db){
